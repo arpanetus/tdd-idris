@@ -10,6 +10,6 @@ palindromeAnswer res = case res of
   False => "No"
 
 main : IO ()
-main = do 
+main = do
   putStrLn (palindromeAnswer ((palindrome "racecar")))
   putStrLn (palindromeAnswer ((palindrome "Racecar")))

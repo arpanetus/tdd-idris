@@ -1,0 +1,4 @@
+--
+-- ("A", "B", "C") : (String, String, String)
+-- ["A", "B", "C"] : List String
+-- (('A', "B"), 'C') : ((String, String), String)
