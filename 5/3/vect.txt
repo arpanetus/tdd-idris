@@ -1,0 +1,6 @@
+ls
+chown
+cat
+grep
+atom
+#comment
