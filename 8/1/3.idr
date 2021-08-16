@@ -1,0 +1,11 @@
+threeEq : (num: Nat) -> (num1: Nat) -> (num2: Nat) -> Maybe ((num, num1) = (num1, num2))
+threeEq Z Z Z = Just Refl
+threeEq Z Z (S k) = Nothing
+threeEq Z (S k) Z = Nothing
+threeEq Z (S k) (S j) = Nothing
+threeEq (S k) Z Z = Nothing
+threeEq (S k) Z (S j) = Nothing
+threeEq (S k) (S j) Z = Nothing
+threeEq (S k) (S j) (S i) = case threeEq k k k of
+                                 Nothing => Nothing
+                                 (Just Refl) => Just Refl
